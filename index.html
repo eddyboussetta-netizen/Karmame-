@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les Dimensions de Gaïa – Bilan énergétique & symbolique</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--g:#d4af37;--gl:#f3e5ab;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:#050a08 radial-gradient(circle at 50% 0,#2b1850 0,transparent 60%) fixed;color:#f1efe6;font-family:'Cormorant Garamond',Georgia,serif;font-size:19px}
+header{text-align:center;padding:28px 14px 6px}
+header h1{font-family:Cinzel,serif;color:var(--gl);letter-spacing:.16em;font-size:26px;margin:4px 0}
+header p{margin:4px 0;color:#8fd1b3;font-style:italic;font-size:19px}
+.panel{max-width:640px;margin:16px auto;background:#0d141c;border:1px solid #d4af3777;border-radius:24px;padding:26px}
+.panel h2{font-family:Cinzel,serif;text-align:center;color:var(--gl);margin:0 0 6px;font-size:26px}
+.panel .sub{text-align:center;font-style:italic;color:#d4d1c3;margin:0 0 18px;font-size:20px}
+label{display:block;font-family:Cinzel,serif;font-size:13px;letter-spacing:.12em;color:var(--gl);margin:14px 0 6px;text-transform:uppercase}
+input,select{width:100%;padding:15px;background:#060b10;border:1px solid #1f5c46;border-radius:13px;color:#fff;font:inherit;font-size:19px}
+input:focus,select:focus{outline:none;border-color:var(--g)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.r3{display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
+.btn{width:100%;margin-top:20px;padding:17px;border:0;border-radius:14px;background:linear-gradient(135deg,#f3e5ab,#d4af37);color:#1a1405;font-family:Cinzel,serif;font-weight:700;font-size:16px;cursor:pointer}
+.btn.s{background:#111a22;color:#e6e3d6;border:1px solid #445}.btn:disabled{opacity:.6}
+.bar{max-width:760px;margin:16px auto 6px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:0 12px}
+.bar .btn{width:auto;margin:0;padding:15px 22px}
+#st{text-align:center;color:#8fd1b3;font-size:17px;margin:6px 14px;min-height:22px}#st a{color:var(--g)}
+.hide{display:none!important}
+.cred{text-align:center;font-size:16px;color:#aab;padding:18px}.cred a{color:var(--g)}
+.qb{max-width:640px;margin:22px auto;text-align:center;padding:24px;border:2px solid #d4af3799;border-radius:20px;cursor:pointer;background:#111a22}
+.qb p{margin:8px 0;font-size:26px;font-style:italic}.qb small{color:var(--g);font-family:Cinzel,serif;font-size:13px}
+#ov{position:fixed;inset:0;background:#050a08;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Cinzel,serif;color:var(--gl);font-size:20px;gap:12px}
+.sh{background:#fbf6e9;color:#1d2a24;position:relative;overflow:hidden}
+.hd{background:linear-gradient(120deg,#0b3326,#2a1850);color:#f3e5ab;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border-bottom:3px solid #d4af37}
+.hd .k{font-family:Cinzel,serif;letter-spacing:.2em;color:#8fd1b3}
+.hd h1,.hd h2{font-family:Cinzel,serif;color:#fff;line-height:1.12;margin:6px 0}
+.hd p{margin:0;font-style:italic;color:#eadfb4}
+.hd svg{flex:none}
+.sec{display:flex;align-items:center;gap:12px;font-family:Cinzel,serif;letter-spacing:.12em;color:#7a5d12;text-transform:uppercase;margin:0}
+.sec:before,.sec:after{content:"";flex:1;height:2px;background:#d4af37}
+.c{background:#fff;border:1px solid #e2d3a4;border-top:5px solid var(--a,#b8912f);border-radius:14px;display:flex;flex-direction:column;box-shadow:0 2px 8px #0002}
+.c i{font-style:normal;width:2.1em;height:2.1em;border-radius:50%;background:#f7efd6;border:2px solid var(--a,#b8912f);display:flex;align-items:center;justify-content:center;font-size:1.5em;line-height:1;margin-bottom:.15em}
+.c small{font-family:Cinzel,serif;font-size:.7em;letter-spacing:.07em;color:#7a5d12;text-transform:uppercase}
+.c b{font-family:Cinzel,serif;color:#14382c;line-height:1.15;font-size:1.25em}
+.c p{margin:0;color:#2f3d36}
+.c em{font-style:italic}.c i:empty{display:none}
+.nums .c{text-align:center;align-items:center}.nums .c b{font-size:2.2em}
+.tasks div{display:flex;gap:10px;align-items:flex-start}
+.tasks span{flex:none;width:1.7em;height:1.7em;border-radius:50%;background:#14382c;color:#f3e5ab;font:700 .75em/1.7em Cinzel,serif;text-align:center}
+.dec{background:linear-gradient(120deg,#0b3326,#2a1850);color:#f3e5ab;border-radius:14px;text-align:center;font-style:italic;border:2px solid #d4af37}
+.dec small{display:block;font-family:Cinzel,serif;font-style:normal;font-size:.62em;letter-spacing:.2em;color:#8fd1b3;margin-bottom:5px}
+.src{color:#5a665f;text-align:center;margin:0}
+.ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;color:#6b5a2a;border-top:1px solid #e2d3a4}
+.band{background:#fff;border:1px solid #e2d3a4;border-radius:14px;padding:10px;text-align:center}
+.band svg{width:100%;height:auto}.band small{font-family:Cinzel,serif;letter-spacing:.1em;color:#7a5d12;font-size:.68em}
+/* ÉCRAN : lisible, grandes polices */
+#sheets .sh{max-width:780px;margin:20px auto;border-radius:26px;border:2px solid #d4af37;box-shadow:0 24px 70px #000b;font-size:18px;line-height:1.45}
+#sheets .hd{padding:30px 22px;justify-content:center;text-align:center}
+#sheets .hd .k{font-size:12px}#sheets .hd h1{font-size:32px}#sheets .hd h2{font-size:26px}#sheets .hd p{font-size:20px}
+#sheets .hd svg{width:min(270px,72vw);height:auto}
+#sheets .bd{padding:22px;display:flex;flex-direction:column;gap:18px}
+#sheets .sec{font-size:15px}
+#sheets .g3,#sheets .g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:14px}
+#sheets .c{padding:18px;gap:5px}#sheets .c p{font-size:18px}#sheets .c b{font-size:23px}
+#sheets .top3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;align-items:center;justify-items:center}
+#sheets .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;width:100%}
+#sheets .tasks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 22px}
+#sheets .dec{padding:22px;font-size:21px}#sheets .src{font-size:15px}#sheets .ft{padding:12px 22px;font-size:14px}
+.top3 svg{width:170px;height:170px}
+/* PDF A4 */
+#pdf{position:fixed;left:0;top:0;width:210mm;z-index:1;font-size:13.5px;line-height:1.35}
+#pdf.off{left:-12000px}
+#pdf .sh{width:210mm;height:296.6mm;display:flex;flex-direction:column}
+#pdf .sh:before{content:"";position:absolute;top:4mm;left:4mm;right:4mm;bottom:4mm;border:.4mm solid #b8912f;pointer-events:none;z-index:2}
+#pdf .hd{padding:11mm 13mm 8mm}
+#pdf .hd .k{font-size:10px}#pdf .hd h1{font-size:30px}#pdf .hd h2{font-size:22px}#pdf .hd p{font-size:16px}
+#pdf .hd svg{width:56mm;height:56mm}#pdf .p2 .hd svg,#pdf .p3 .hd svg{width:26mm;height:26mm}
+#pdf .bd{flex:1;padding:6mm 12mm 3mm;display:flex;flex-direction:column;gap:3.5mm;min-height:0}
+#pdf .sec{font-size:11px}
+#pdf .g3{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr;gap:3mm;flex:1;min-height:0}
+#pdf .g2{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+#pdf .c{padding:3.2mm 3.6mm;gap:1mm}#pdf .c p{font-size:13.5px}#pdf .c b{font-size:16.5px}
+#pdf .top3{display:grid;grid-template-columns:40mm 1fr;gap:5mm;align-items:center}
+#pdf .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-bottom:3mm}
+#pdf .tasks{display:grid;grid-template-columns:1fr 1fr;gap:2.6mm 6mm;font-size:14px}
+#pdf .dec{padding:4mm 6mm;font-size:15.5px}#pdf .src{font-size:11px}#pdf .p3 .c em{font-size:14.5px}
+#pdf .ft{padding:2.5mm 13mm 7mm;margin:0 12mm;font-size:10.5px;position:relative;z-index:3}
+@page{size:A4;margin:0}
+@media print{html,body{background:#fff!important;padding:0!important}.no,#sheets,#ov{display:none!important}#pdf,#pdf.off{position:static!important;left:0!important}#pdf .sh{page-break-after:always;break-after:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}#pdf .sh:last-child{page-break-after:auto;break-after:auto}}
+</style>
+</head>
+<body>
+<header class="no"><p style="font-family:Cinzel,serif;font-size:13px;color:#8fd1b3;letter-spacing:.3em;margin:0">✦ BILAN SPIRITUEL · 25 MODULES ✦</p><h1>LES DIMENSIONS DE GAÏA</h1><p>Créé par Eddy Boussetta</p></header>
+
+<section id="form" class="panel no">
+<h2>Profil énergétique & symbolique</h2>
+<p class="sub">Saisissez les coordonnées de naissance pour révéler vos 25 correspondances.</p>
+<form id="f" onsubmit="go(event)">
+<div class="r2"><div><label for="ln">Nom *</label><input id="ln" required autocomplete="off" placeholder="Boussetta"></div><div><label for="fn">Prénom(s) *</label><input id="fn" required autocomplete="off" placeholder="Eddy"></div></div>
+<div class="r3"><div><label for="bd">Date de naissance *</label><input id="bd" required inputmode="numeric" maxlength="10" placeholder="JJ/MM/AAAA" oninput="fd(this)"></div><div><label for="bt">Heure</label><input id="bt" inputmode="numeric" maxlength="5" placeholder="HH:MM" oninput="ft(this)"></div></div><input id="gd" type="hidden" value="a">
+<label for="bp">Lieu de naissance *</label><input id="bp" required autocomplete="off" placeholder="Béziers, France">
+<button class="btn" type="submit">Générer mon bilan complet ✦</button>
+</form>
+</section>
+
+<div id="ov" class="hide no"><div style="font-size:54px">☸</div><p>Création…</p></div>
+<div id="load" class="hide no" style="text-align:center;padding:90px 20px"><div style="font-size:54px">☸</div><h2 style="font-family:Cinzel,serif;color:var(--gl)">Calcul des 25 matrices vibratoires…</h2><p style="font-style:italic">Harmonisation astrologique, numérologique et chamanique</p></div>
+
+<div id="res" class="hide">
+<div class="bar no"><button class="btn" id="dlb" onclick="dl()">📄 Télécharger le PDF (3 pages A4)</button><button class="btn s" onclick="window.print()">🖨️ Imprimer</button><button class="btn s" onclick="reset()">Nouveau profil</button></div>
+
+<div id="st" class="no"></div><div id="sheets"></div>
+<div class="qb no" onclick="tq()"><small id="qs">▶ TAPOTEZ POUR STOPPER</small><p id="qt"></p><small id="qa"></small></div>
+</div>
+<div id="pdf" class="off"></div>
+<div class="cred no">Créé par <b>Eddy Boussetta</b> · <a href="https://www.lesdimensionsdegaia.com" target="_blank" rel="noopener">www.lesdimensionsdegaia.com</a><br>Outil symbolique de développement personnel – ne remplace pas un avis médical.</div>
+
+<script>
+const $=i=>document.getElementById(i),S=s=>s.split("|"),esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function fd(i){let v=i.value.replace(/\D/g,"");i.value=v.length>4?v.slice(0,2)+"/"+v.slice(2,4)+"/"+v.slice(4,8):v.length>2?v.slice(0,2)+"/"+v.slice(2):v}
+function ft(i){let v=i.value.replace(/\D/g,"");i.value=v.length>2?v.slice(0,2)+":"+v.slice(2,4):v}
+const Q=[["La paix vient de l’intérieur. Ne la cherchez pas à l’extérieur.","Sagesse bouddhiste"],["Connais-toi toi-même.","Inscription du temple de Delphes"],["Un voyage de mille lieues commence par un premier pas.","Lao Tseu"],["Tu as pouvoir sur ton esprit, pas sur les événements.","Marc Aurèle"],["On ne se baigne jamais deux fois dans le même fleuve.","Héraclite"],["Le royaume est au-dedans de vous.","Évangile de Luc"]];
+let qi=0,qv=null;function qs(){clearInterval(qv);qv=setInterval(()=>{qi=(qi+1)%Q.length;qr()},1800);$("qs").textContent="▶ TAPOTEZ POUR STOPPER"}
+function qr(){$("qt").textContent="« "+Q[qi][0]+" »";$("qa").textContent="— "+Q[qi][1]}
+function tq(){if(qv){clearInterval(qv);qv=null;$("qs").textContent="❚❚ CITATION SÉLECTIONNÉE"}else qs()}
+qr();qs();
+const Z=["Capricorne|Terre|Saturne|♑|Ambition, rigueur et endurance","Verseau|Air|Uranus|♒|Vision, liberté et inventivité","Poissons|Eau|Neptune|♓|Intuition, compassion et rêve","Bélier|Feu|Mars|♈|Courage, élan et initiative","Taureau|Terre|Vénus|♉|Constance, sensualité et ancrage","Gémeaux|Air|Mercure|♊|Curiosité, parole et agilité","Cancer|Eau|Lune|♋|Sensibilité, protection et mémoire","Lion|Feu|Soleil|♌|Rayonnement, noblesse et cœur","Vierge|Terre|Mercure|♍|Discernement, service et précision","Balance|Air|Vénus|♎|Harmonie, justice et lien","Scorpion|Eau|Pluton|♏|Transformation, profondeur et force","Sagittaire|Feu|Jupiter|♐|Quête, foi et expansion"];
+const CUT=[20,19,21,20,21,21,23,23,23,23,22,22];
+const TR=["Orme|Dignité et endurance","Pommier|Renouveau et amour","Saule|Intuition et cycles lunaires","Aulne|Courage et passage","Frêne|Lien entre les mondes","Noisetier|Sagesse et inspiration","Bouleau|Purification et commencements","Chêne|Force et souveraineté","Sureau|Protection et transmutation","Tilleul|Douceur et équilibre","Houx|Vaillance et protection","Cèdre|Élévation et noblesse"];
+const FL=["Edelweiss|Persévérance en altitude","Orchidée|Raffinement et rareté","Nénuphar|Sérénité et rêve","Coquelicot|Vitalité et renaissance","Rose|Amour et beauté","Lavande|Apaisement et clarté","Lotus|Pureté et éveil","Tournesol|Loyauté et lumière","Pivoine|Prospérité et pudeur","Jasmin|Grâce subtile","Chrysanthème|Mémoire et transformation","Iris|Messager d’intuition"];
+const AN=["Loup|Intuition et loyauté","Cygne|Grâce et intériorité","Papillon|Joie et métamorphose","Ours|Ancrage et solidité","Faucon|Liberté et vision","Cerf|Douceur et noblesse","Hibou|Sagesse et mystère","Aigle|Puissance et clarté","Phénix|Renaissance et accomplissement"];
+const EL={Feu:"Salamandres|Esprits du feu : élan, passion et purification",Terre:"Gnomes|Gardiens de la terre : stabilité et abondance",Air:"Sylphes|Esprits de l’air : inspiration et clarté mentale",Eau:"Ondines|Esprits de l’eau : émotions, guérison et intuition"};
+const MY=["Cronos|Temps et maturité","Prométhée|Feu d’éveil et liberté","Poséidon|Mers profondes et rêve","Arès|Courage et élan","Déméter|Terre nourricière","Hermès|Messager et passeur","Artémis|Lune sauvage et protection","Apollon|Lumière et harmonie","Athéna|Sagesse et stratégie","Thémis|Justice et équilibre","Hécate|Seuils et mystères","Zeus|Souveraineté et foi"];
+const AR=["Mikaël|Dimanche · protection et courage","Gabriel|Lundi · message et intuition","Camaël|Mardi · force et justice","Raphaël|Mercredi · guérison et parole","Sachiel|Jeudi · abondance et bienveillance","Anaël|Vendredi · amour et harmonie","Cassiel|Samedi · patience et sagesse"];
+const JO=["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],PJ=["Soleil","Lune","Mars","Mercure","Jupiter","Vénus","Saturne"];
+const SA=["Sainte Geneviève|Protection et courage","Saint Valentin|Amour et fidélité","Saint Joseph|Protection du foyer","Saint Georges|Vaillance face aux ombres","Sainte Rita|Espérance dans l’impossible","Saint Antoine de Padoue|Ce qui est perdu se retrouve","Saint Benoît|Équilibre et discernement","Sainte Claire|Clarté et simplicité","Saint Michel|Protection et justice","Sainte Thérèse de Lisieux|Petite voie et confiance","Saint Martin|Partage et générosité","Saint Nicolas|Générosité et lumière"];
+const HI=["Ganesh|Lève les obstacles","Saraswati|Savoir et art sacré","Lakshmi|Abondance et grâce","Shiva|Transformation et silence","Hanuman|Dévotion et force","Durga|Protection et courage","Vishnou|Équilibre du monde","Kali|Libération des illusions","Krishna|Joie et dévotion"];
+const BU=["Tara Verte|Compassion en action","Avalokiteshvara|Compassion infinie","Manjushri|Sagesse tranchante","Amitabha|Lumière infinie","Bouddha Shakyamouni|Éveil et présence","Bouddha de Médecine|Guérison","Vajrapani|Puissance protectrice","Samantabhadra|Agir pour tous","Maitreya|Bienveillance à venir"];
+const MI=["Grenat|Vitalité et ancrage","Améthyste|Élévation et apaisement","Aigue-marine|Courage et clarté","Cristal de roche|Amplification et pureté","Émeraude|Cœur et renouveau","Pierre de lune|Intuition et cycles","Rubis|Passion et énergie","Péridot|Joie et guérison","Lapis-lazuli|Vérité et vision","Opale|Créativité et émotions","Citrine|Abondance et confiance","Turquoise|Protection et parole"];
+const PU={Feu:"Fumigation de sauge|Passez la pierre dans la fumée avec une intention claire",Terre:"Bain de sel ou de terre|Enterrez-la une nuit dans un sol sain",Air:"Encens et vent frais|Exposez-la à l’air libre quelques heures",Eau:"Eau de source|Rincez (si la pierre le supporte), rechargez à la lune"};
+const CH=["Muladhara|Racine|396|#d94141|Sécurité et ancrage","Svadhisthana|Sacré|417|#f08a2c|Créativité et plaisir","Manipura|Plexus|528|#e0b81f|Volonté et confiance","Anahata|Cœur|639|#3fae5a|Amour et compassion","Vishuddha|Gorge|741|#3a8fd8|Expression et vérité","Ajna|Troisième œil|852|#5a4bc4|Intuition et vision","Sahasrara|Couronne|963|#a459c9|Éveil et unité"];
+const CO=["Orion|Le guerrier de lumière, protection","Pléiades|Tendresse et mémoire stellaire","Sirius|Sagesse ancienne et fidélité","La Lyre|Harmonie, musique des sphères","Cassiopée|Souveraineté et intuition","Grande Ourse|Orientation, gardienne du nord"];
+const CV=["Égypte antique|Géométrie sacrée et alchimie","Grèce classique|Philosophie et harmonie","Culture celtique|Lien aux arbres et aux esprits","Civilisation maya|Cycles du temps et des étoiles","Inde védique|Sagesse du souffle et du son","Chine taoïste|Équilibre du yin et du yang"];
+const LI=["Forêt de Brocéliande (France)|Mémoire druidique et légendes","Vallée sacrée (Pérou)|Hauts sommets et ancêtres","Mont Shasta (États-Unis)|Haute fréquence","Glastonbury (Angleterre)|Avalon, pommiers et collines","Montségur (Ariège)|Citadelle de lumière occitane","Vallée des Merveilles (France)|Pierres gravées et altitude"];
+const PR=["Chant de mantras|Chantez OM 21 fois chaque matin","Lecture sacrée en forêt|Lisez à voix haute sous un arbre","Bain de forêt|Marchez 20 min sans téléphone","Respiration cohérente|5 min, 6 cycles par minute","Écoute en 528 Hz|Méditez avec un son pur","Journal de gratitude|Trois lignes chaque soir"];
+const LP={1:"Pionnier·ère|indépendance et leadership",2:"Médiateur·rice|sensibilité et coopération",3:"Créateur·rice|expression et joie",4:"Bâtisseur·se|structure et fiabilité",5:"Voyageur·se|liberté et changement",6:"Gardien·ne|amour, famille et service",7:"Chercheur·se|spiritualité et analyse",8:"Stratège|puissance et accomplissement",9:"Sage|compassion et achèvement",11:"Maître 11|intuition et inspiration",22:"Maître 22|bâtir les grands rêves",33:"Maître 33|guider et enseigner l’amour"};
+const ET={eddy:"forme anglaise d’Édouard, du vieil anglais Ēadweard : « gardien de la prospérité ».",michel:"hébreu Mikhaël : « Qui est comme Dieu ? ».",marie:"d’origine hébraïque (Miryam), souvent rattaché à « aimée » ou « élevée ».",jean:"hébreu Yohanan : « Dieu fait grâce ».",pierre:"grec petra : « la pierre, le roc ».",paul:"latin Paulus : « le petit, l’humble ».",sophie:"grec sophia : « la sagesse ».",thomas:"araméen te’oma : « le jumeau ».",lucas:"latin Lucas, lié à la lumière (lux).",emma:"germanique ermen : « entier, universel »."};
+const sd=n=>String(n).split("").reduce((a,b)=>a+ +b,0),rd=n=>{while(n>9&&![11,22,33].includes(n))n=sd(n);return n},bs=n=>n>9?sd(n):n;
+const vals=s=>s.normalize("NFD").replace(/[^a-zA-Z]/g,"").toUpperCase().split("").reduce((a,c)=>a+(c.charCodeAt(0)-65)%9+1,0);
+const card=(n,l,t,d,ic,a)=>`<div class="c" style="--a:${a||"#b8912f"}"><i>${ic}</i><small>${n}. ${l}</small><b>${t}</b><p>${d}</p></div>`;
+const cs=(n,l,s,ic,a)=>{const [t,d]=S(s);return card(n,l,t,d,ic,a)};
+function wheel(z){let s='<svg viewBox="-100 -100 200 200"><circle r="97" fill="#0b2a21" stroke="#d4af37" stroke-width="1.5"/><circle r="67" fill="none" stroke="#d4af3780"/><circle r="30" fill="#1a1038" stroke="#d4af37"/>';
+for(let i=0;i<12;i++){const a=(((i-3+12)%12)*30-90+15)*Math.PI/180,l=(((i-3+12)%12)*30-90)*Math.PI/180,x=82*Math.cos(a),y=82*Math.sin(a);
+s+=`<line x1="${67*Math.cos(l)}" y1="${67*Math.sin(l)}" x2="${97*Math.cos(l)}" y2="${97*Math.sin(l)}" stroke="#d4af3780"/>`;
+if(i==z)s+=`<circle cx="${x}" cy="${y}" r="13" fill="#d4af37"/>`;
+s+=`<text x="${x}" y="${y+6}" text-anchor="middle" font-size="17" fill="${i==z?"#1a1405":"#f3e5ab"}">${S(Z[i])[3]}</text>`}
+for(let k=0;k<8;k++){const a=k*Math.PI/4;s+=`<line x1="${30*Math.cos(a)}" y1="${30*Math.sin(a)}" x2="${66*Math.cos(a)}" y2="${66*Math.sin(a)}" stroke="#d4af3744"/>`}
+return s+`<text y="12" text-anchor="middle" font-size="34" fill="#f3e5ab">${S(Z[z])[3]}</text></svg>`}
+function chakras(k){let s='<svg viewBox="0 0 700 92">';for(let i=0;i<7;i++){const [,n,h,c]=S(CH[i]),x=50+100*i,m=i==k;
+if(i<6)s+=`<line x1="${x+24}" y1="34" x2="${x+76}" y2="34" stroke="#d4af37" stroke-dasharray="3 4"/>`;
+s+=(m?`<circle cx="${x}" cy="34" r="31" fill="${c}" opacity=".2"/>`:"")+`<circle cx="${x}" cy="34" r="${m?24:17}" fill="${c}" stroke="${m?"#b8912f":"none"}" stroke-width="3"/><text x="${x}" y="40" text-anchor="middle" font-size="${m?18:13}" fill="#fff" font-family="Cinzel,serif" font-weight="700">${i+1}</text><text x="${x}" y="76" text-anchor="middle" font-size="12" fill="#14382c" font-weight="${m?700:500}">${n}</text><text x="${x}" y="89" text-anchor="middle" font-size="10" fill="#7a5d12">${h} Hz</text>`}return s+"</svg>"}
+function emblem(n){let t=(r,o)=>{let p=[];for(let i=0;i<3;i++){const a=(i*120-90+o)*Math.PI/180;p.push((r*Math.cos(a)).toFixed(1)+","+(r*Math.sin(a)).toFixed(1))}return p.join(" ")};
+return `<svg viewBox="-60 -60 120 120" width="44mm" height="44mm"><circle r="57" fill="#0f3a2c" stroke="#d4af37" stroke-width="2"/><circle r="49" fill="none" stroke="#d4af3788"/><polygon points="${t(46,0)}" fill="none" stroke="#d4af37" stroke-width="1.4"/><polygon points="${t(46,180)}" fill="none" stroke="#8fd1b3" stroke-width="1.4"/><text y="14" text-anchor="middle" font-size="38" fill="#f3e5ab" font-family="Cinzel,serif" font-weight="700">${n}</text></svg>`}
+function go(e){e.preventDefault();const g=i=>$(i).value.trim(),[d,m,y]=g("bd").split("/").map(Number),dt=new Date(Date.UTC(y,m-1,d));
+if(!y||y<1000||dt.getUTCDate()!==d||dt.getUTCMonth()!==m-1){alert("Date invalide (JJ/MM/AAAA).");return}
+$("form").classList.add("hide");$("load").classList.remove("hide");
+setTimeout(()=>{build(g("fn"),g("ln"),d,m,y,g("bt"),g("bp"),dt.getUTCDay());$("load").classList.add("hide");$("res").classList.remove("hide");fit();window.scrollTo({top:0,behavior:"smooth"})},700)}
+function build(fn,ln,d,m,y,tm,pl,wd){
+const z=(d>=CUT[m-1]?m:m-1)%12,[zn,ze,zp,zg,zt]=S(Z[z]),lp=rd(sd(d)+sd(m)+sd(y)),b=bs(lp),ex=rd(vals(fn+ln)),py=rd(sd(d)+sd(m)+sd(new Date().getFullYear()));
+const ch=S(CH[(b-1)%7]),ar=S(AR[wd]),tot=S(AN[b-1]),el=S(EL[ze]),[lt,ld]=S(LP[lp]),co=S(CO[d%6]);
+const fnk=fn.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().split(/[ -]/)[0],E=esc(fn),F=esc(fn+" "+ln),mi=S(MI[m-1]),pu=S(PU[ze]),pr=S(PR[(d+m)%6]);
+const e1=ET[fnk]?`Le prénom <b style="font-size:1em">${E}</b> vient du ${ET[fnk]}`:`Le prénom <b style="font-size:1em">${E}</b> compte ${fn.replace(/[^a-zA-ZÀ-ÿ]/g,"").length} lettres et vibre sur le <b style="font-size:1em">${rd(vals(fn))}</b> (${S(LP[rd(vals(fn))])[0]}).`;
+const e2=`Le nom <b style="font-size:1em">${esc(ln)}</b> vibre sur le <b style="font-size:1em">${rd(vals(ln))}</b> (${S(LP[rd(vals(ln))])[0]}) : empreinte de lignée.`;
+const meta=`Né(e) le ${String(d).padStart(2,"0")}/${String(m).padStart(2,"0")}/${y}${tm?" à "+esc(tm):""} · ${esc(pl)}`;
+const sh=(n,cls,hd,bd)=>`<section class="sh ${cls}"><div class="hd">${hd}</div><div class="bd">${bd}</div><div class="ft"><span>Page ${n}/3 · Bilan énergétique & symbolique</span><span>Créé par Eddy Boussetta · www.lesdimensionsdegaia.com</span></div></section>`;
+const mini=wheel(z).replace(/<text y="12"[^]*?<\/text>/,"");
+const p1=sh(1,"p1",`<div><div class="k">LES DIMENSIONS DE GAÏA · BILAN SPIRITUEL 1/3</div><h1>${F.toUpperCase()}</h1><p>${meta}</p><p style="margin-top:8px;color:#8fd1b3">${zg} ${zn} · Élément ${ze} · ${zp}</p></div>${wheel(z)}`,
+`<p class="sec">1 & 2 · Onomastique</p><div class="g2"><div class="c"><small>1. Étymologie du prénom</small><p>${e1}</p></div><div class="c"><small>2. Étymologie du nom</small><p>${e2}</p></div></div>
+<p class="sec">3 à 9 · Thème, nature & protecteurs</p><div class="g3">
+${card(3,"Signe & élément",zn,"Élément "+ze+" · "+zt,zg,"#b8912f")}${card("3b","Planète maîtresse",zp,"Règle votre signe et colore votre vie intérieure","🪐","#5a4bc4")}${card("3c","Jour de naissance",JO[wd],"Jour de "+PJ[wd]+" : sa lumière colore votre nature","🌅","#e0b81f")}
+${cs(4,"Arbre de résonance",TR[z],"🌳","#3fae5a")}${cs(5,"Fleur totem",FL[z],"🌸","#d9648c")}${card(6,"Animal totem",tot[0],tot[1],"🐺","#3a8fd8")}
+${card(7,"Esprit de la nature",el[0],el[1],"🧚","#1f8f6c")}${cs(8,"Figure mythologique",MY[z],"🏛️","#c0762c")}${card(9,"Archange protecteur","Archange "+ar[0],ar[1],"👼","#7a5fc9")}</div>`);
+const p2=sh(2,"p2",`<div><div class="k">ALLIANCES SPIRITUELLES & ANCRAGE 2/3</div><h2>Fréquences célestes & terrestres</h2><p>${F}</p></div>${mini}`,
+`<div class="band"><small>VOTRE CHAKRA MAÎTRE : ${ch[1].toUpperCase()} · ${ch[2]} Hz</small>${chakras((b-1)%7)}</div>
+<div class="g3">${cs(10,"Saint(e) du mois",SA[m-1],"🕊️","#b8912f")}${cs(11,"Divinité hindoue",HI[b-1],"🪷","#f08a2c")}${cs(12,"Guide bouddhique",BU[b-1],"☸️","#e0b81f")}
+${cs(13,"Minéral sacré",MI[m-1],"💎","#3a8fd8")}${card(14,"Purification & soin",pu[0],pu[1],"🔥","#1f8f6c")}${card(15,"Chakra & fréquence",ch[0]+" ("+ch[1]+")",ch[2]+" Hz · "+ch[4],"✨",ch[3])}
+${card(16,"Constellation maîtresse",co[0],co[1],"🌌","#5a4bc4")}${cs(17,"Civilisation d’ancrage",CV[(m+d)%6],"🏺","#c0762c")}${cs(18,"Lieu de ressourcement",LI[m%6],"⛰️","#3fae5a")}</div>`);
+const ta=[`${pr[0]} chaque matin : ${pr[1].toLowerCase()}.`,`Portez votre minéral sacré (${mi[0]}) en méditation.`,"Consacrez un autel : bougie, pierre, eau, végétal.",`Marchez 15 min près d’un arbre (${S(TR[z])[0]}).`,"Notez vos rêves et intuitions chaque matin.",`Respirez 5 min en visualisant le chakra ${ch[1]}.`,`Purifiez votre espace : ${pu[0].toLowerCase()}.`,"Marchez pieds nus 10 min sur la terre.","Récitez votre décret chaque matin.","Offrez un geste de bienveillance par jour."];
+const p3=sh(3,"p3",`<div><div class="k">NOMBRES, ACTIVATION & SOUVERAINETÉ 3/3</div><h2>Plan d’action & autonomie</h2><p>${F}</p></div>${mini}`,
+`<p class="sec">19 & 20 · Numérologie & pratique</p><div class="top3">${emblem(lp)}<div style="width:100%"><div class="nums">${card("","Chemin de vie",lp,lt,"","#b8912f")}${card("","Expression",ex,S(LP[ex])[0],"","#1f8f6c")}${card("","Année perso.",py,S(LP[py])[0],"","#5a4bc4")}</div><div class="c" style="--a:#3a8fd8"><small>20. Pratique d’épanouissement</small><b>${pr[0]}</b><p>${pr[1]}.</p></div></div></div>
+<p class="sec">21 · Les 10 tâches d’activation</p><div class="tasks">${ta.map((t,i)=>`<div><span>${i+1}</span>${t}</div>`).join("")}</div>
+<p class="sec">22 · Clés d’autonomie</p><div class="tasks"><div><span>✦</span>Écoutez votre ressenti avant chaque choix.</div><div><span>✦</span>Cultivez le discernement : testez, ressentez.</div><div><span>✦</span>Ancrez-vous chaque jour dans la nature.</div><div><span>✦</span>Votre intuition est votre boussole.</div></div>
+<div class="c" style="--a:#b8912f"><small>23. Mission d’âme</small><p><em>« ${E}, votre chemin ${lp} vous appelle à cultiver ${ld} et à transmettre la lumière de Gaïa. »</em></p></div>
+<div class="dec"><small>24 · DÉCRET D’ACTIVATION SPIRITUELLE</small>« Moi, ${E}, sous la protection de l’archange ${ar[0]}, guidé(e) par le ${tot[0].toLowerCase()} et les étoiles de ${co[0]}, j’accueille mes dons et ma souveraineté spirituelle. »</div>
+<p class="src"><b>25 · Sources :</b> CNRTL · Martyrologe romain · traditions védiques et bouddhistes · numérologie pythagoricienne · catalogue IAU. Lecture symbolique et inspirante.</p>`);
+NM=(fn+"-"+ln).replace(/[^\w\-]+/g,"_");const H=p1+p2+p3;$("sheets").innerHTML=H;$("pdf").innerHTML=H}
+function fit(){}
+addEventListener("resize",fit);
+let NM="";
+const ldj=u=>new Promise((a,b)=>{const t=document.createElement("script");t.src=u;t.onload=a;t.onerror=()=>b(new Error("chargement impossible : "+u.split("/").pop()));document.head.appendChild(t);setTimeout(()=>b(new Error("délai dépassé")),20000)});
+function msg(t){$("st").innerHTML=t}
+async function dl(){const b=$("dlb"),pd=$("pdf"),ov=$("ov");b.disabled=true;msg("");ov.classList.remove("hide");ov.querySelector("p").textContent="Création du PDF (3 pages)…";
+try{if(!window.jspdf)await ldj("https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js");
+if(!window.html2canvas)await ldj("https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js");
+window.scrollTo(0,0);pd.classList.remove("off");try{await document.fonts.ready}catch(_){}await new Promise(r=>setTimeout(r,300));
+const pdf=new jspdf.jsPDF({unit:"mm",format:"a4",compress:true}),sh=[...pd.querySelectorAll(".sh")];
+for(let i=0;i<sh.length;i++){ov.querySelector("p").textContent="Page "+(i+1)+" / 3…";const c=await html2canvas(sh[i],{scale:2,backgroundColor:"#fbf6e9",scrollX:0,scrollY:0,logging:false});if(i)pdf.addPage();pdf.addImage(c.toDataURL("image/jpeg",.92),"JPEG",0,0,210,297)}
+pd.classList.add("off");ov.classList.add("hide");
+const name="Bilan-Dimensions-de-Gaia-"+NM+".pdf",blob=pdf.output("blob"),url=URL.createObjectURL(blob);let ok=false;
+try{const dn=window.claude?await claude.use("downloads"):null;if(dn){await dn.save({filename:name,data:blob});ok=true}}catch(e){if(e&&e.code==="declined"){msg("Téléchargement annulé.");b.disabled=false;return}}
+if(!ok){try{const a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();ok=true}catch(_){}}
+msg(ok?"✅ PDF prêt. S’il ne s’est pas enregistré : <a href='"+url+"' target='_blank' download='"+name+"'>appuyez ici</a> ou utilisez « Imprimer ».":"<a href='"+url+"' target='_blank' download='"+name+"'>Appuyez ici pour ouvrir le PDF</a>")
+}catch(e){pd.classList.add("off");ov.classList.add("hide");msg("⚠️ PDF automatique impossible ("+esc(String(e&&e.message||e))+"). Utilisez « Imprimer » puis « Enregistrer au format PDF ».")}
+b.disabled=false}
+function reset(){$("f").reset();$("res").classList.add("hide");$("form").classList.remove("hide");window.scrollTo({top:0})}
+</script>
+</body>
+</html>
 
